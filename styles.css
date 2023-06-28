@@ -1,0 +1,232 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ECF2F8;
+  padding-top: 3.8rem;
+  position: relative;
+  padding-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  border-radius: 0.8rem;
+  padding: 2.6rem 3.2rem;
+  margin: 2.4rem;
+  -webkit-box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.25);
+          box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.25);
+}
+
+.person {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4rem auto;
+      grid-template-columns: 4rem auto;
+  -ms-grid-rows: 1.5rem auto;
+      grid-template-rows: 1.5rem auto;
+}
+
+.person .name {
+  font-size: 1.3rem;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  line-height: 1.3rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin: 0rem;
+}
+
+.person .graduate {
+  font-size: 1.1rem;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  line-height: 1.1rem;
+  opacity: 0.5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin: 0rem;
+}
+
+.person img {
+  border-radius: 2.8rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.text1 {
+  font-size: 2rem;
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+}
+
+.text2 {
+  font-size: 1.3rem;
+  font-family: Barlow Semi Condensed;
+  font-weight: 500;
+  line-height: 1.8rem;
+  opacity: 0.7;
+}
+
+#DanielClifford {
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+  background-color: #733FC8;
+}
+
+#DanielClifford .text1, #DanielClifford .name, #DanielClifford .graduate {
+  color: #FFFFFF;
+}
+
+#DanielClifford .text2 {
+  color: #CFCFCF;
+}
+
+#JonathanWalters {
+  background-color: #48556A;
+}
+
+#JonathanWalters .text1, #JonathanWalters .text2, #JonathanWalters .name, #JonathanWalters .graduate {
+  color: #FFFFFF;
+}
+
+#JeanetteHarmon {
+  background-color: #FFFFFF;
+}
+
+#JeanetteHarmon .text1, #JeanetteHarmon .text2, #JeanetteHarmon .name, #JeanetteHarmon .graduate {
+  color: #48556A;
+}
+
+#PatrickAbrams {
+  background-color: #19202D;
+}
+
+#PatrickAbrams .text1 {
+  color: #ECF2F8;
+}
+
+#PatrickAbrams .text2, #PatrickAbrams .name, #PatrickAbrams .graduate {
+  color: #FFFFFF;
+}
+
+#KiraWhittle {
+  background-color: #FFFFFF;
+}
+
+#KiraWhittle .text1, #KiraWhittle .text2, #KiraWhittle .name, #KiraWhittle .graduate {
+  color: #48556A;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0%;
+  font-size: 2rem;
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+  text-align: center;
+}
+
+#footer a {
+  font-size: 2rem;
+  font-family: Barlow Semi Condensed;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  #main {
+    max-width: 111rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 23% 23% 23% 23%;
+        grid-template-columns: 23% 23% 23% 23%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    row-gap: 3rem;
+    -webkit-column-gap: 2.4rem;
+            column-gap: 2.4rem;
+    margin: 3rem 2.4rem;
+  }
+  .card {
+    padding: 2.6rem 3.2rem;
+    margin: 0rem;
+  }
+  #DanielClifford {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    background-position: 80% 0%;
+  }
+  #JonathanWalters {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+  }
+  #JeanetteHarmon {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  #PatrickAbrams {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+  }
+  #KiraWhittle {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
